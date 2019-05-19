@@ -22,6 +22,14 @@ docker run -d -p 8081:80 alpinecore:1.0
 
 docker build --build-arg rabbitmq=localhost -f Dockerfile.alpine-x64 -t alpinecore:1.0 .
 
+# Push image to docker
+1. Build the image  --> docker build -f Dockerfile.alpine-x64 -t alpinecore:1.0 .
+
+2. Tag image --> docker tag alpineaspnetcore:1.0 bhoobal/alpineaspnetcore:1.0
+
+3. docker login  --> docker login
+
+4. Push the image to repo  --> docker push bhoobal/alpineaspnetcore:1.0
 
 # Git commands
 git init
@@ -31,3 +39,5 @@ git push
 git remote add origin git@github.com:bhoobal/Sample_aspcore_webapplication
 git push origin
 git push --set-upstream origin master
+
+
