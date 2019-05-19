@@ -22,7 +22,7 @@ docker run -d -p 8081:80 alpinecore:1.0
 
 docker build --build-arg rabbitmq=localhost -f Dockerfile.alpine-x64 -t alpinecore:1.0 .
 
-# Push image to docker
+# Push image to dockerhub
 1. Build the image  --> docker build -f Dockerfile.alpine-x64 -t alpinecore:1.0 .
 
 2. Tag image --> docker tag alpineaspnetcore:1.0 bhoobal/alpineaspnetcore:1.0
