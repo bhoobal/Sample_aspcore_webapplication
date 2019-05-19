@@ -7,6 +7,8 @@ In this i tried below
 2. read variable from environment
 3. Docker multistage build
 4. Using alpine as base image
+5. Using config map to inject environment variables
+6. Using secrets
 
 # Docker commands
 
