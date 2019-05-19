@@ -8,7 +8,12 @@ In this i tried below
 3. Docker multistage build
 4. Using alpine as base image
 5. Using config map to inject environment variables
+
+# Yet to try
 6. Using secrets
+7. Use helm
+8. use helm to deploy in differnt namespace
+
 
 # Docker commands
 
