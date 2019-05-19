@@ -40,4 +40,31 @@ git remote add origin git@github.com:bhoobal/Sample_aspcore_webapplication
 git push origin
 git push --set-upstream origin master
 
+# Kubernetes part
+I am using minikube
+
+$ minikube start
+
+$ minikune ip
+
+$ minikube status
+
+$ kubect proxy  -- to start dashboard
+
+$ kubectl apply -f webappdeployment.yaml
+
+$ kubectl expose deployment webapplication-deployment --type=NodePort --port 80 --target-port 80
+
+You need to make sure pods and endpoints are exposed in services
+
+$ kubectl describe services
+
+$ kubectl apply -f configmapexample.yaml
+
+$ kubectl apply -f webappdeployment.yaml
+
+
+
+
+
 
