@@ -11,11 +11,17 @@ In this i tried below
 # Docker commands
 
 docker build -f Dockerfile.alpine-x64 -t alpinecore:1.0 .
+
 docker build -f Dockerfile.alpine-x64 -t alpinecore:1.0 . && docker run -it -p 8081:80 alpinecore:1.0
+
 docker exec -it dedd102f87154 '/bin/sh' 
+
 docker stop $(docker ps --all --format "{{.Names}}")
+
 docker run -d -p 8081:80 alpinecore:1.0
+
 docker build --build-arg rabbitmq=localhost -f Dockerfile.alpine-x64 -t alpinecore:1.0 .
+
 
 # Git commands
 git init
