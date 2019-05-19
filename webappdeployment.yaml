@@ -1,0 +1,24 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: webapplication-deployment
+  labels:
+    app: aspnetcore
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: corewebapp
+  template:
+    metadata:
+      labels:
+        app: corewebapp
+    spec:
+      containers:
+      - name: corewebapp
+        image: bhoobal/alpineaspnetcore:1.0
+        envFrom:
+        - configMapRef:
+            name: exconfigmap
+        ports:
+        - containerPort: 80
