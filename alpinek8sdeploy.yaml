@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
       - name: alpinesample
-        image: bhoobal/alpinesample:latest
+        image: bhoobal/alpinesample:v1
         ports:
         - containerPort: 80
