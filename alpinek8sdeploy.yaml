@@ -29,6 +29,6 @@ spec:
     spec:
       containers:
       - name: alpinesample
-        image: bhoobal/alpinesample:v1
+        image: bhoobal/alpineaspnetcore:1.0
         ports:
         - containerPort: 80
