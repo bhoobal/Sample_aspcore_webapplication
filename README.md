@@ -1,3 +1,5 @@
+[![Docker Image CI](https://github.com/bhoobal/Sample_aspcore_webapplication/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/bhoobal/Sample_aspcore_webapplication/actions/workflows/docker-image.yml)
+
 # Sample_aspcore_webapplication
 Sample asp.net core web application - alpine 
 
