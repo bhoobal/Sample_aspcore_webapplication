@@ -41,7 +41,7 @@ permissions:
 jobs:
   Analysis:
     runs-on: ubuntu-latest
-    environment: env-demo
+    environment: env-actions-demo
 
     steps:
       - name: Analyze with SonarCloud
