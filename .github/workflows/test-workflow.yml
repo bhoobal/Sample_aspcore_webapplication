@@ -1,0 +1,25 @@
+name: act runner local
+on:
+  push:
+    branches:
+      - ghs_test_runner
+  workflow_dispatch:
+jobs:
+  act_test_runner:
+    name: Testing act local runner
+    runs-on: Default
+    steps:
+      - name: Check Out Source Code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 2
+      - name: Setup Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17' # ${{ matrix.version }}''
+          distribution: 'corretto' #${{ setup-java-major-versions.matrix.distribution }}''
+          cache: 'gradle'
+        env:
+          - ARTIFACTORY_USERNAME : "some env variable"
+      - run: |
+          echo $ARTIFACTORY_USERNAME
