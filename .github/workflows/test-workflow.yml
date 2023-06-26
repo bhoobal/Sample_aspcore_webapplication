@@ -7,7 +7,7 @@ on:
 jobs:
   act_test_runner:
     name: Testing act local runner
-    runs-on: Default
+    runs-on: ubuntu-latest
     env:
       ARTIFACTORY_USERNAME : "some env variable"
     steps:
