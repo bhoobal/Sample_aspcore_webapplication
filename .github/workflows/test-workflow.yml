@@ -2,7 +2,7 @@ name: act runner local
 on:
   push:
     branches:
-      - ghs_test_runner
+      - master
   workflow_dispatch:
 jobs:
   act_test_runner:
